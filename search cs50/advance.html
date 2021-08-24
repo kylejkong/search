@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            
+        <title>Search</title>
+<style>
+    table {
+        border: 5px solid pink;
+    border-collapse: collapse;
+    position: fixed;
+    right:0;
+    top:0;
+}
+
+td {
+    border: 5px solid whitesmoke;
+    padding: 5px;
+}
+
+.advance{
+    font-size: 11px;
+    background-color:#007bff; 
+    color:white;
+    padding: 7px 16px;
+    transition: 0.3s;
+    opacity: 0.8;
+    position:absolute;
+    left:70%;
+    top:110%;
+    width:30%;
+    font-family:Arial, Helvetica, sans-serif
+    letter-spacing: 1px;
+    }
+
+.advance:hover {
+    opacity: 1
+    }
+
+
+h1{
+    position:fixed;
+    color: black;
+              text-align: left;
+              font-size: 11px;
+              font-family:Arial, Helvetica, sans-serif
+              }
+</style>            
+    </head>
+    
+    <body>
+        <table>
+            <tbody>
+                <td><a href="index.html" >Google Search</a></td>                
+                            </tbody>
+        </table>
+         
+        <h1><form action="https://google.com/search" name="f">
+            <div class="field">
+                <label for="field1">all these words:</label>
+                <input type="text"  id="field1" value=""  name="as_q">
+            </div>
+            <br>
+            <div class="field">
+                <label for="field2">this exact word or phrase: </label>
+                <input type="text"  id="field2" value=""  name="as_epq">
+            </div>
+            <br>
+            <div class="field">
+                <label for="field3">any of this words: </label>
+                <input type="text"  id="field3" value=""  name="as_oq">
+            </div>
+            <br>
+            <div class="field">
+                <label for="field4">none of these words: </label>
+                <input type="text"  id="field4" value=""  name="as_eq">
+            </div>
+            <br>
+            <div class="field">
+                <label for="field5">numbers ranging from: </label>
+                <input type="text"  id="field5" value=""  name="as_nlo">
+                <span class="seperator">to</span>
+                <input type="text"  id="field5" value=""  name="as_nhi">
+            </div>
+            
+            <input class="advance" type="submit" value="Advanced Search" >
+        </form></h1>
+    </body>
+</html>
